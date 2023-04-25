@@ -94,3 +94,11 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(teleportLocation))
     end
 end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if msg == '!FW' then
+        -- Teleport the entire character's body to the desired location
+        local teleportLocation = Vector3.new(165, 158, -722)
+        game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(teleportLocation))
+    end
+end)
